@@ -2,6 +2,8 @@
     --black-bkg: #222222;
     --pink-bkg: #f1e4e6;
     --pink-color: #f18b99;
+    --header-icon-fill: #e8e8e8;
+    --header-icon-fill-hover: #f16d7f;
     --nav-title-color: #f16d7f;
     --nav-text-color: #6f6e6e;
     --sales-bkg: #4e4544;
@@ -15,6 +17,9 @@
     --advantages-bkg: #222224;
     --advantages-color: #fbfbfb;
     --socials-bkg: #222224;
+    --socials-link-bkg: #ffffff;
+    --socials-link-bkg-hover: #f16d7f;
+    --socials-link-hover: #ffffff;
     --socials-copyright-color: #fbfbfb;
 }
 
@@ -168,6 +173,21 @@ body {
     margin: 0 0 0 33px;
 }
 
+.header__icon{
+    fill: var(--header-icon-fill);
+}
+
+.header__icon:hover {
+    fill: var(--header-icon-fill-hover);
+}
+
+.header__icon:focus {
+    fill: var(--header-icon-fill-hover);
+}
+
+.header__icon:active {
+    opacity: 0.5;
+}
 
 
 .brand {
@@ -283,6 +303,8 @@ body {
 }
 
 .products__item-button{
+    width: 139px;
+    height: 44px;
     position: absolute;
     top: 50%;  
     left: 50%;
@@ -293,6 +315,10 @@ body {
     display: none;
 }
 
+.products__item-basket-icon{
+    width: 24px;
+    height: 24px;
+}
 .products__item-overlay{
     position: relative;
 }
@@ -311,8 +337,15 @@ body {
 }
 
 .products__item:hover .products__item-button {
-    display: block;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
     cursor: pointer;
+}
+
+.products__item-button:active {
+    background-color: #FF6A6A;
+    opacity: 0.5;
 }
 .products__item:hover .products__item-overlay:before {
     display: block;
@@ -341,7 +374,6 @@ body {
     margin: 48px auto 95px;
     padding: 15px 38px;
     display: block;
-    text-align: center;
     border: 1px #FF6A6A solid;
     cursor: pointer;
     background-color: transparent;
@@ -351,6 +383,10 @@ body {
 .products__button:hover {
     color: #FFFFFF;
     background-color: #FF6A6A;
+}
+
+.products__button:active {
+    opacity: 0.5;
 }
 
 .advantages {
@@ -408,4 +444,26 @@ body {
 .socials_list {
     display: flex;
     gap: 7px;
+}
+
+.socials_item-link {
+    width: 32px;
+    height: 32px;
+    background-color: var(--socials-link-bkg);
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials_item-link:hover svg{
+    fill: var(--socials-link-hover);
+}
+
+.socials_item-link:hover {
+    background-color: var(--socials-link-bkg-hover);
+}
+
+.socials_item-link:active {
+    opacity: 0.5;
 }
