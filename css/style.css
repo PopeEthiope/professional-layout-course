@@ -2,6 +2,8 @@
     --black-bkg: #222222;
     --pink-bkg: #f1e4e6;
     --pink-color: #f18b99;
+    --nav-title-color: #f16d7f;
+    --nav-text-color: #6f6e6e;
     --sales-bkg: #4e4544;
     --sales-title-color: #f16d7f;
     --sales-text-color: #ffffff;
@@ -9,6 +11,7 @@
     --products-title-color: #222222;
     --products-subtitle-color: #9f9f9f;
     --products-color: #f16d7f;
+    --button-color: #ffffff;
     --advantages-bkg: #222224;
     --advantages-color: #fbfbfb;
     --socials-bkg: #222224;
@@ -40,6 +43,14 @@ body {
     margin: 0 auto;
 }
 
+.button__main {
+
+}
+
+.button__main-text{
+
+}
+
 .header {
     background-color: var(--black-bkg);
 
@@ -57,6 +68,30 @@ body {
     margin: 0 41px 0 0;
 }
 
+.header__search-icon:hover {
+    cursor: pointer;
+}
+
+.header__search-input{
+    position: absolute;
+    display: none;
+    top: 28px;
+    left: 160px;
+    border: none;
+}
+
+.header__search-icon:focus + .header__search-input {
+    display: block;
+}
+
+.header__search-icon:hover + .header__search-input {
+    display: block;
+}
+
+.header__search-input:hover{
+    display: block;
+}
+
 .header__menu-list {
     display: flex;
     align-items: center;
@@ -68,13 +103,57 @@ body {
     background-color: transparent;
 }
 
+.header__burger:hover {
+    cursor: pointer;
+}
 .header__nav {
+    padding: 37px 0px 0px 34px;
     position: absolute;
     width: 232px;
+    min-height: 764px;
     top: 100%;
-    right: -250px;
+    right: -280px;
     background: white;
     display: none;
+}
+
+.header__nav-close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: none;
+    background-color: transparent;
+}
+
+.header__nav-title{
+    text-transform: uppercase;
+}
+
+.nav-item__title{
+    margin: 24px 0 0 0;
+    text-transform: uppercase;
+    color: var(--nav-title-color);
+}
+
+.nav-item__list{
+    margin: 0 0 0 20px;
+}
+
+.nav-item__item{
+    margin: 12px 0 0 0;
+    color: var(--nav-text-color);
+}
+
+.nav-item__item:hover {
+    cursor: pointer;
+}
+
+.nav-item__title:hover {
+    cursor: pointer;
+}
+
+.header__nav-close:hover {
+    cursor: pointer;
 }
 
 .header__burger:hover + .header__nav, .header__burger:focus + .header__nav {
@@ -208,6 +287,10 @@ body {
     top: 50%;  
     left: 50%;
     transform: translate(-50%, -50%); 
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
+    background-color: transparent;
+    display: none;
 }
 
 .products__item-overlay{
@@ -227,12 +310,9 @@ body {
     display: none;
 }
 
-.products__item-button{
-    display: none;
-}
-
 .products__item:hover .products__item-button {
     display: block;
+    cursor: pointer;
 }
 .products__item:hover .products__item-overlay:before {
     display: block;
@@ -255,6 +335,22 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: var(--products-color);
+}
+
+.products__button {
+    margin: 48px auto 95px;
+    padding: 15px 38px;
+    display: block;
+    text-align: center;
+    border: 1px #FF6A6A solid;
+    cursor: pointer;
+    background-color: transparent;
+    color: #F26376;
+}
+
+.products__button:hover {
+    color: #FFFFFF;
+    background-color: #FF6A6A;
 }
 
 .advantages {

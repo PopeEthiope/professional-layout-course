@@ -21,6 +21,7 @@
             <div class="header__container">
                 <img class="header__logo" src="./img/logo-img.png" alt="logo">
                 <img class="header__search-icon" src="./img/loupe.svg" alt="loupe">
+                <input class="header__search-input" type="text">
             </div>
             <ul class="header__menu-list">
                 <li>
@@ -28,6 +29,9 @@
                         <img class="header__burger-icon" src="./img/burger.svg" alt="burder">
                     </button>
                     <nav class="header__nav">
+                        <button class="header__nav-close">
+                            <img class="header__nav-img-close" src="./img/img-close.svg" alt="close menu">
+                        </button>
                         <h2 class="header__nav-title">menu</h2>
                         <ul class="header__nav-list">
                             <li class="header__nav-item nav-item">
@@ -40,7 +44,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <h3>woman</h3>
+                                <h3 class="nav-item__title">woman</h3>
                                 <ul class="nav-item__list">
                                     <li class="nav-item__item">Accessories</li>
                                     <li class="nav-item__item">Jackets & Coats</li>
@@ -50,7 +54,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <h3>kids</h3>
+                                <h3 class="nav-item__title">kids</h3>
                                 <ul class="nav-item__list">
                                     <li class="nav-item__item">Accessories</li>
                                     <li class="nav-item__item">Jackets & Coats</li>
@@ -116,7 +120,8 @@
                     <li class="products__item">
                         <div class="products__item-overlay">
                             <img class="products__item-img" src="./img/products-img-1.jpg" alt="products">
-                            <button class="products__item-button">Add to cart</button>
+                            <button class="products__item-button button__main"><img class="header__basket-icon"
+                                    src="./img/basket.svg" alt="basket">Add to cart</button>
                         </div>
                         <h3 class="products__item-title">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring,
@@ -128,7 +133,8 @@
                     <li class="products__item">
                         <div class="products__item-overlay">
                             <img class="products__item-img" src="./img/products-img-2.jpg" alt="products">
-                            <button class="products__item-button">Add to cart</button>
+                            <button class="products__item-button"><img class="header__basket-icon"
+                                    src="./img/basket.svg" alt="basket">Add to cart</button>
                         </div>
                         <h3 class="products__item-title">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring,
@@ -140,7 +146,8 @@
                     <li class="products__item">
                         <div class="products__item-overlay">
                             <img class="products__item-img" src="./img/products-img-3.jpg" alt="products">
-                            <button class="products__item-button">Add to cart</button>
+                            <button class="products__item-button"><img class="header__basket-icon"
+                                    src="./img/basket.svg" alt="basket">Add to cart</button>
                         </div>
                         <h3 class="products__item-title">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring,
@@ -152,7 +159,8 @@
                     <li class="products__item">
                         <div class="products__item-overlay">
                             <img class="products__item-img" src="./img/products-img-4.jpg" alt="products">
-                            <button class="products__item-button">Add to cart</button>
+                            <button class="products__item-button"><img class="header__basket-icon"
+                                    src="./img/basket.svg" alt="basket">Add to cart</button>
                         </div>
                         <h3 class="products__item-title">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring,
@@ -164,7 +172,8 @@
                     <li class="products__item">
                         <div class="products__item-overlay">
                             <img class="products__item-img" src="./img/products-img-5.png" alt="products">
-                            <button class="products__item-button">Add to cart</button>
+                            <button class="products__item-button"><img class="header__basket-icon"
+                                    src="./img/basket.svg" alt="basket">Add to cart</button>
                         </div>
                         <h3 class="products__item-title">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring,
@@ -176,7 +185,10 @@
                     <li class="products__item">
                         <div class="products__item-overlay">
                             <img class="products__item-img" src="./img/products-img-6.jpg" alt="products">
-                            <button class="products__item-button">Add to cart</button>
+                            <button class="products__item-button button__main"><img class="header__basket-icon"
+                                    src="./img/basket.svg" alt="basket">
+                                <p class="button__main-text">Add to cart</p>
+                            </button>
                         </div>
                         <h3 class="products__item-title">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring,
@@ -186,6 +198,7 @@
                         <p class="products__item-price">$52.00</p>
                     </li>
                 </ul>
+                <button class="products__button">Browse All Product</button>
             </div>
         </section>
         <section class="advantages">
