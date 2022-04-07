@@ -1,0 +1,109 @@
+.header {
+    background-color: var(--black-bkg);
+
+}
+
+.header__wrap {
+    display: flex;
+    align-items: center;
+    min-height: 75px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__search-icon:hover {
+    cursor: pointer;
+}
+
+.header__search-input{
+    position: absolute;
+    display: none;
+    top: 28px;
+    left: 160px;
+    border: none;
+}
+
+.header__search-icon:focus + .header__search-input {
+    display: block;
+}
+
+.header__search-icon:hover + .header__search-input {
+    display: block;
+}
+
+.header__search-input:hover{
+    display: block;
+}
+
+.header__menu-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header__burger {
+    border: none;
+    background-color: transparent;
+}
+
+.header__burger:hover {
+    cursor: pointer;
+}
+.header__nav {
+    padding: 37px 0px 0px 34px;
+    position: absolute;
+    width: 232px;
+    min-height: 764px;
+    top: 100%;
+    right: -280px;
+    background: white;
+    display: none;
+}
+
+.header__nav-close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: none;
+    background-color: transparent;
+}
+
+.header__nav-title{
+    text-transform: uppercase;
+}
+
+.header__nav-close:hover {
+    cursor: pointer;
+}
+
+.header__burger:hover + .header__nav, .header__burger:focus + .header__nav {
+    display: block;
+}
+
+.header__nav :hover {
+    display: block;
+}
+
+.header__link {
+    margin: 0 0 0 33px;
+}
+
+.header__icon{
+    fill: var(--header-icon-fill);
+}
+
+.header__icon:hover {
+    fill: var(--header-icon-fill-hover);
+}
+
+.header__icon:focus {
+    fill: var(--header-icon-fill-hover);
+}
+
+.header__icon:active {
+    opacity: 0.5;
+}
