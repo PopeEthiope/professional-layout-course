@@ -9,7 +9,7 @@
 
 .brand__title-wrap {
     flex-grow: 1;
-    background-color: var(--pink-bkg);
+    background-color: $pink-bkg;
     padding: 0 0 0 92px;
     display: flex;
     align-items: center;
@@ -30,5 +30,5 @@
 }
 
 .brand__title-pink {
-    color: var(--pink-color);
+    color: $pink-color;
 }
