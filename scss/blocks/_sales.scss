@@ -11,7 +11,7 @@
 .sales__item {
     width: 360px;
     height: 260px;
-    background-color: var(--sales-bkg);
+    background-color: $sales-bkg;
     text-align: center;
 }
 
@@ -20,7 +20,7 @@
     text-transform: uppercase;
     font-size: 16px;
     line-height: 19px;
-    color: var(--sales-text-color);
+    color: $sales-text-color;
 }
 
 .sales__item-title {
@@ -28,7 +28,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    color: var(--sales-title-color);
+    color: $sales-title-color;
 }
 
 .sales__item--women {

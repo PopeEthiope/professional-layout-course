@@ -1,0 +1,90 @@
+.subscribe {
+    background-image: url(../../img/subscribe-bkgi.jpg);
+    background-repeat: no-repeat;
+    min-height: 448px;
+    height: 448px;
+    &__wrap{
+        height: inherit;
+        .subscribe__form {
+            height: inherit;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-review {
+                width: 360px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 30px;
+                text-align: center;
+                &-review {
+                    &-img{
+                        margin: 0 0 0 0;
+                    }
+                    &-text{
+                        margin: 0 0 0 0;
+                    }
+                }
+            }
+            &-email {
+                width: 557px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                &-title {
+                    text-transform: uppercase;
+                }
+                &-text {
+                    text-transform: uppercase;
+                }
+                &-send {
+                    width: 356px;
+                    margin: 32px 0 0 0;
+                    display: flex;
+                    justify-content: space-between;
+                    &-input {
+                        height: 49px;
+                        flex-grow: 1;
+                        border-bottom-left-radius: 24px;
+                        border-top-left-radius: 24px;
+                        text-align: left;
+                        border: 0;
+                        padding: 0 0 0 22px;
+                        background-color: #E1E1E1;
+                        &:hover {
+                            background-color: #ffffff;
+                        }
+                        &:focus {
+                            background-color: #ffffff;
+                        }
+                    }
+                    &-button {
+                        padding: 16px;
+                        text-align: center;
+                        text-decoration: none;
+                        background-color: #F16D7F;
+                        color: #ffffff;
+                        border: none;
+                        border-bottom-right-radius: 24px;
+                        border-top-right-radius: 24px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        &:hover {
+                            background-color: #ec0a28;
+                            color: #ffffff;
+                        }
+                        &:active {
+                            opacity: 0.7;
+                        }
+                    }    
+                }
+            }
+        }
+
+    }
+    
+}

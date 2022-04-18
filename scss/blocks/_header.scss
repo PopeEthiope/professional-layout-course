@@ -1,5 +1,5 @@
 .header {
-    background-color: var(--black-bkg);
+    background-color: $black-bkg;
 
 }
 
@@ -93,15 +93,15 @@
 }
 
 .header__icon{
-    fill: var(--header-icon-fill);
+    fill: $header-icon-fill;
 }
 
 .header__icon:hover {
-    fill: var(--header-icon-fill-hover);
+    fill: $header-icon-fill-hover;
 }
 
 .header__icon:focus {
-    fill: var(--header-icon-fill-hover);
+    fill: $header-icon-fill-hover;
 }
 
 .header__icon:active {
