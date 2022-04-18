@@ -445,9 +445,14 @@ body {
   color: #f18b99;
 }
 
-.subscribe {
-  background-image: url(../../img/subscribe-bkgi.jpg);
+.subscribe__wrap {
+  width: 1600px;
+  margin: 0 auto;
+  background-image: url(../img/subscribe-bkgi.jpg);
   background-repeat: no-repeat;
+}
+
+.subscribe {
   min-height: 448px;
   height: 448px;
 }
@@ -591,5 +596,150 @@ body {
 
 .socials__item-link:active {
   opacity: 0.5;
+}
+
+.registration__wrap {
+  min-height: 148px;
+  height: 148px;
+  background-color: #f8f3f4;
+}
+
+.registration__title {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.registration__title-text {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+
+.registration__box {
+  min-height: 680px;
+  height: 680px;
+  padding: 64px 0 0 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.registration__box-form {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  flex-grow: 0;
+}
+
+.registration__form-fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.registration__form-legend {
+  margin: 0 0 20px 0;
+}
+
+.registration__form-input {
+  padding: 0 0 0 17px;
+  margin: 0;
+  height: 45px;
+  width: 360px;
+  opacity: 0.5;
+}
+
+.registration__form-label-radio {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+
+.radio-flex-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.registration__form-radio {
+  padding: 0;
+  margin: 0;
+  height: 17px;
+  width: 17px;
+}
+
+.registration__form-radio-text {
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.registration__form-prompt {
+  font-size: 13px;
+  line-height: 16px;
+  opacity: 0.2;
+}
+
+.registration__form-loyality {
+  padding: 0 0 0 128px;
+  flex-grow: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.registration__form-button {
+  padding: 16px 29px;
+  display: block;
+  border: 1px #F16D7F solid;
+  cursor: pointer;
+  background-color: #F16D7F;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.registration__form-button-arrow {
+  margin: 0 0 0 20px;
+  fill: #ffffff;
+}
+
+.loyality__title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.loyality__text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.loyality__list {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.loyality__item {
+  margin: 0 0 16px 40px;
+  position: relative;
+}
+
+.loyality__item::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  left: -38px;
+  background-image: url(../img/check.svg);
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=style.css.map */

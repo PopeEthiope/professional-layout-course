@@ -1,6 +1,10 @@
-.subscribe {
-    background-image: url(../../img/subscribe-bkgi.jpg);
+.subscribe__wrap {
+    width: 1600px;
+    margin: 0 auto;
+    background-image: url(../img/subscribe-bkgi.jpg);
     background-repeat: no-repeat;
+}
+.subscribe {
     min-height: 448px;
     height: 448px;
     &__wrap{
